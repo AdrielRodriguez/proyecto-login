@@ -3,31 +3,30 @@ import { useNavigate } from "react-router-dom";
 import "./LoginForm.css";
 
 export default function LoginForm() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [mail, setMail] = useState("");
+  const [pass, setPass] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  function handleLogin(e) {
     e.preventDefault();
-    // Redirige al dashboard
-    navigate("/dashboard");
-  };
+    navigate("/dashboard"); // redirige al dashboard
+  }
 
   return (
-    <form className="login-form" onSubmit={handleSubmit}>
+    <form className="login-form" onSubmit={handleLogin}>
       <h2>Iniciar Sesión</h2>
       <input
         type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Correo electrónico"
+        value={mail}
+        onChange={e => setMail(e.target.value)}
         required
       />
       <input
         type="password"
         placeholder="Contraseña"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        value={pass}
+        onChange={e => setPass(e.target.value)}
         required
       />
       <button type="submit">Entrar</button>

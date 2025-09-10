@@ -1,3 +1,11 @@
+:root {
+  --color-bg: #0d1117;
+  --color-card: #161b22;
+  --color-text: #c9d1d9;
+  --color-button: #238636;
+  --color-button-hover: #2ea043;
+  --font-family: 'Poppins', sans-serif;
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;

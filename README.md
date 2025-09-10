@@ -1,18 +1,15 @@
 # Login App
 
-Este proyecto es una **aplicación de login simple** creada con React y Vite.  
-Permite ingresar email y contraseña y muestra los datos en una alerta al enviar el formulario.
+Login App es una aplicación web sencilla para iniciar sesión, creada con **React** y **Vite**.  
+Incluye un formulario de login centrado, navegación simulada usando HashRouter, y cierre de sesión.
 
 ## Tecnologías utilizadas
 
 - React
 - Vite
-- JavaScript
+- React Router (HashRouter)
 - HTML & CSS
+- Google Fonts (Poppins)
 
-## Cómo ejecutar el proyecto
+## Estructura del proyecto
 
-1. Clonar el repositorio:
-
-```bash
-git clone https://github.com/AdrielRodriguez/proyecto-login.git

@@ -1,7 +1,7 @@
 .dashboard {
   text-align: center;
   margin-top: 5rem;
-  color: #c9d1d9;
+  color: var(--color-text);
 }
 
 @media (max-width: 500px) {
