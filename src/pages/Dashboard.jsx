@@ -1,35 +1,10 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import "./Dashboard.css";
 
-function Dashboard() {
-  const navigate = useNavigate();
-
-  const logout = () => {
-    // Podrías limpiar datos de sesión aquí
-    navigate("/");
-  };
-
+export default function Dashboard() {
   return (
-    <div style={{ textAlign: "center", padding: "50px" }}>
-      <h1>¡Bienvenido al Dashboard! 🎉</h1>
-      <p>Has iniciado sesión correctamente.</p>
-      <button
-        onClick={logout}
-        style={{
-          marginTop: "20px",
-          padding: "12px 20px",
-          backgroundColor: "#e53e3e",
-          color: "#fff",
-          border: "none",
-          borderRadius: "8px",
-          cursor: "pointer",
-          fontSize: "1rem",
-        }}
-      >
-        Cerrar sesión
-      </button>
+    <div className="dashboard">
+      <h2>Bienvenido</h2>
+      <p>Has ingresado correctamente al sistema.</p>
     </div>
   );
 }
-
-export default Dashboard;

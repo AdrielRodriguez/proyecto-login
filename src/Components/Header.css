@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1117;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logout-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  background-color: #21262d;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #2d333b;
+}
+
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
